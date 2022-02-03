@@ -12,8 +12,6 @@ int main(void)
 {
 	void myprintf(char *,...);
 	char * convert(unsigned int, int);
-	int i=65;
-	char str[]="not printed with printf :D";
 	myprintf("and that piece of art is useful");
        	myprintf("- Dora Korpar, 2015-10-19");
 }
