@@ -3,7 +3,7 @@
 
 /**
  * main - Entry point
- * 
+ *
  * Return: Always 0 (Success)
  */
 
@@ -12,6 +12,7 @@ int main(void)
 	int x;
 
 	x = 'A';
+
 	for (x = 'A'; x <= 'Z'; x++)
 	{
 	putchar(tolower(x));
