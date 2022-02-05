@@ -21,9 +21,9 @@ for (x = '0'; x <= '9'; x++)
 
 	putchar(x);
 	putchar(y);
-	putchar(' ');
 	if (x < '8')
-	putchar(',');	/* code */
+	putchar(',');
+	putchar(' ');	/* code */
 	}
 
 
