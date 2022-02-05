@@ -6,24 +6,29 @@
  * Return: Always 0 (Success)
  */
 
-
 int main(void)
 {
-	int x, y;
-	int arr[2];
-	
-for (x = 0; x < 2; x++)
-    {
-        for (y = 0; y < 2; y++)
-        {
-            
-            if (x != y )
-                
-                    
-                printf("[%d %d]\n", arr[x], arr[y]);
-             
-    }
+int x, y;
+x = 0;
+y = 0;
+
+for (x = '0'; x <= '9'; x++)
+{
+	for (y = x; y <= '9'; y++)
+	{
+	if (((x != y && (y != '0' || y != '1'))) && (y <= '9' && x <= '8'))
+{
+
+	putchar(x);
+	putchar(y);
+	if (x < '8')
+	putchar(',');	/* code */
 	}
 
-	return (0);
+
+}
+}
+	putchar('\n');
+return (0);
+
 }
