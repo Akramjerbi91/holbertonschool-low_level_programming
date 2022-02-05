@@ -23,6 +23,7 @@ for (x = '0'; x <= '9'; x++)
 	putchar(y);
 	if (x < '8')
 	putchar(',');	/* code */
+	putchar(' ');
 	}
 
 
