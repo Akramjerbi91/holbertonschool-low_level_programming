@@ -24,7 +24,6 @@ for (x = '0'; x <= '9'; x++)
 	if (x < '8')
 {
 	putchar(',');
-
 	putchar(' ');
 	}
 	}
