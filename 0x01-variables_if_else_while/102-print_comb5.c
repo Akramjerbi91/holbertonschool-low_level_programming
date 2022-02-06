@@ -16,7 +16,7 @@ for (i = '0'; i <= '9'; i++)
 	for (k = j; k <= '9'; k++)
 		for (p = k; p <= '9'; p++)
 	{
-	if ((i != j || i != k) && (i != p || j != k))
+	if (i != j || i != k || i != p || j != k)
 {
 	putchar(i);
 	putchar(j);
