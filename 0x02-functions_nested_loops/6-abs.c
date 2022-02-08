@@ -16,7 +16,7 @@ int result
 	if (n < 0)
 {
 	result= n * -1;
-	return(result)
+	return(result);
 }
 	else 
 {
