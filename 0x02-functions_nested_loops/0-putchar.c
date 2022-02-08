@@ -1,12 +1,10 @@
 #include "main.h"
 
 /**
-* This program prints _putchar, followed by a new line.
+* main -  prints _putchar followed by a new line
 *
-* This program returns 0
+* Return: Always 0.
 */
-
-
 int main(void)
 {
 	int i;
