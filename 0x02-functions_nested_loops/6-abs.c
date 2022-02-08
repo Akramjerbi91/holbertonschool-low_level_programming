@@ -6,11 +6,12 @@
  * Return: Always 0.
  */
 
- int _abs(int x)
+ int _abs(int num)
 
  {
+int result;
 
-x = x * -1;
-return (x);
+result = num * -1;
+return (result);
 
  }
