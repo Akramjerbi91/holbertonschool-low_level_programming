@@ -4,9 +4,10 @@
  *
  * Return: Always 0 (Success)
  */
-void print_times_table(void)
+void print_times_table(int n)
 {
-	char i = 0, j, n = 0;
+	char i = 0, j;
+       	n = 0;
 
 	while (n >= 0 || n <= 15)
 
