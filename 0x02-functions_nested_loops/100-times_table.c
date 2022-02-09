@@ -6,7 +6,7 @@
  */
 void print_times_table(void)
 {
-	char i = 0, j, n;
+	char i = 0, j, n = 0;
 
 	while (n >= 0 || n <= 15)
 
