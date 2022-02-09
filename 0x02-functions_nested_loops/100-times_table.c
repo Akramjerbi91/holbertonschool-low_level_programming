@@ -1,14 +1,14 @@
-include "main.h"
+#include "main.h"
 /**
- * times_table - prints time table
+ * print_times_table - prints time table
  *
  * Return: Always 0 (Success)
  */
-void times_table(void)
+void print_times_table(void)
 {
 	char i = 0, j, n;
 
-	while (n >= 0 && n <= 15)
+	while (n >= 0 || n <= 15)
 
 		for (i = 0; i <= n; i++)
 		{
