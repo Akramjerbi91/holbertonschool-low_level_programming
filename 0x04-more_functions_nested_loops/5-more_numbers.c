@@ -15,11 +15,10 @@ while (j < 10)
 {
 	for (i = 0; i <= 14; i++)
 	{
-		if (i < 9)
-		_putchar(i + 48);
-		else
-		{
+		if (i > 9)
+	{
 		_putchar((i / 10) + 48);
+}
 		_putchar((i % 10) + 48);
 		}
 }
