@@ -2,16 +2,17 @@
 #include<math.h>
 
 /**
- *getMaxPrimeFactor - function that finds the biggest prime factor
- *@n : an integer that we have to test
+ * main - a program that prints the max prime num of a long int.
  *
- * Return: max
+ * Return: the max prime factor of 612852475142
  */
 
-int getMaxPrimeFactor(int n)
+int main(void)
 {
 
-	long int i, max;
+	long int i, max, n;
+
+	n = 612852475143;
 
 	while (n % 2 == 0)
 	{
@@ -30,20 +31,6 @@ int getMaxPrimeFactor(int n)
 	{
 		max = n;
 	}
-	return (max);
-}
+	printf("%ld",max);
 
-/**
- * main - a program that prints the max prime num of a long int.
- *
- * Return: the max prime factor of 612852475143
- */
-
-int main(void)
-{
-	long int n;
-
-	n = 612852475143;
-
-	printf("%ld", getMaxPrimeFactor(n));
 }
