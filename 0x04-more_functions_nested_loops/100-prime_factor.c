@@ -11,7 +11,7 @@
 int main (void)
 {
 
-    long long maxPrime = -1, n;
+    long maxPrime = -1, n;
 
     
 	n = 612852475143;
@@ -36,6 +36,7 @@ int main (void)
  
     if (n > 4)
         maxPrime = n;
- 	printf("%lld\n", maxPrime);
-	return (0);
+ 	printf("%ld\n", maxPrime);
+	return (0)
+		;
 }
