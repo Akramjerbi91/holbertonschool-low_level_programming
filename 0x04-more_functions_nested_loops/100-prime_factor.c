@@ -13,7 +13,8 @@
 int maxPrimeNumber(int n)
 {
 
-	long int i, max;
+	long long int i, max;
+	
 
 	while (n % 2 == 0)
 	{
@@ -44,10 +45,9 @@ int maxPrimeNumber(int n)
 
 void main (void)
 {
-	long int n;
+	long long int n;
 
 	n = 612852475143;
-
-	printf("%ld\n", maxPrimeNumber(n));
+	printf("%lld\n", maxPrimeNumber(n));
 
 }
