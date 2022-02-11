@@ -9,7 +9,7 @@
 
 long maxPrimeFactors(long n)
 {
-	long maxPrime = -1;
+	long maxPrime = -1, i;
 
 	while (n % 2 == 0)
 	{
@@ -21,7 +21,7 @@ long maxPrimeFactors(long n)
 		maxPrime = 3;
 		n = n / 3;
 	}
-	for (int i = 5; i <= sqrt(n); i += 6)
+	for (i = 5; i <= sqrt(n); i += 6)
 	{
 		while (n % i == 0)
 		{
@@ -53,7 +53,7 @@ int main(void)
 	long n;
 
 	n = 612852475143;
-	printf("%ld\n", maxPrimeFactor(n));
+	printf("%ld\n", maxPrimeFactors(n));
 
 	return (0);
 
