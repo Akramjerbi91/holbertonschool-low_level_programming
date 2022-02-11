@@ -2,17 +2,18 @@
 #include<math.h>
 
 /**
- * main - a program that prints the max prime num of a long int.
+ * maxPrimeNumber - prints the greatest prime divider
+ *@n : is an integer
  *
- * Return: the max prime factor of 612852475142
+ *Return: max
  */
 
-int main(void)
+
+
+int maxPrimeNumber(int n)
 {
 
-	long int i, max, n;
-
-	n = 612852475143;
+	long int i, max;
 
 	while (n % 2 == 0)
 	{
@@ -31,6 +32,22 @@ int main(void)
 	{
 		max = n;
 	}
-	printf("%ld",max);
+	return (max);
+
+}
+
+/**
+ * main - a program that prints the max prime num of a long int.
+ *
+ * Return: the max prime factor of 612852475142
+ */
+
+void main (void)
+{
+	long int n;
+
+	n = 612852475143;
+
+	printf("%ld\n", maxPrimeNumber(n));
 
 }
