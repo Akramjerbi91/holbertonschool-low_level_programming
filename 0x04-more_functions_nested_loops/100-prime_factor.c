@@ -4,11 +4,11 @@
 /**
  * main - a program that prints the max prime num of a long int.
  *
- * Return: the max prime factor of 612852475142
- */
+ * Return: Alwys 0.
+ */ 
 
 
-long long main (long long)
+int main (void)
 {
 
     long long maxPrime = -1, n;
@@ -36,9 +36,6 @@ long long main (long long)
  
     if (n > 4)
         maxPrime = n;
- 
-   
-    
-	printf("%lld\n", maxPrime);
-
+ 	printf("%lld\n", maxPrime);
+	return (0);
 }
