@@ -3,7 +3,7 @@
 /**
  * main - a program that computes all the multiples of 3 or 5 bellow 1024
  *
- * Return: void
+ * Return: Always returns zero
  */
 
 
@@ -23,5 +23,5 @@ int main(void)
 }
 
 	printf("%d\n", A + B);
-
+	return (0);
 }
