@@ -10,11 +10,11 @@
 int main(void)
 {
 	int i, A, B;
-	
-	i = A = B =0;
+
+	i = A = B = 0;
 
 
-	for(i = 3; i < 1024; i++)
+	for (i = 3; i < 1024; i++)
 {
 		if (i % 3 == 0)
 			A = A + i;
