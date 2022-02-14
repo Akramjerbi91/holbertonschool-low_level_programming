@@ -2,7 +2,8 @@
 
 /**
  * swap_int - a func that swaps two integers
- * @a, @b : two integers
+ * @a : integer a
+ * @b : integer b
  *
  * Return: void
  */
