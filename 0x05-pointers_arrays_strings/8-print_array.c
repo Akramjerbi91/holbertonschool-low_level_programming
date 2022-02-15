@@ -26,12 +26,12 @@ void print_array(int *a, int n)
 			printf("%d, ", *a);
 			a++;
 		}
-		else 
+		else
 		{
 			printf("%d\n", *a);
 			a++;
 		}
-		
+
 	}
 
 }
