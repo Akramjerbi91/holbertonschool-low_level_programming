@@ -17,8 +17,10 @@ char *string_toupper(char *string)
 	for (i = 0; ; i++)
 	{
 		if ((string[i] >= 'a') && (string[i] <= 'z'))
-		return (string[i] -= 32);
-		else
+		string[i] -= 32;
+
 			if (string[i] == '\0')
 				break;
 	}
+	return (string);
+}
