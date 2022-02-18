@@ -19,7 +19,7 @@ char *leet(char *a)
 		for (j = 0; j < 10; j++)
 
 			if (a[i] == l[j])
-			{			
+			{
 
 
 				a[i] = key[j];
