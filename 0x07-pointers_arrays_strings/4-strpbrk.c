@@ -17,7 +17,7 @@ char *_strpbrk(char *s, char *accept)
 {
 	s += _strcspn(s, accept);
 
-	return (*s) ? (char *)s : NULL;
+	return (*s) ? ((char *)s) : (NULL);
 
 }
 
