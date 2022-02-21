@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stddef.h>
 
-unsigned int _strcspn(char *s, char *accept);
+int _strcspn(char *s, char *accept);
 
 /**
  * _strpbrk - a function that searches a string for any of a set of bytes
@@ -17,11 +17,8 @@ char *_strpbrk(char *s, char *accept)
 {
 	s += _strcspn(s, accept);
 
-	if ((char *)s)
-    {	
-        return (s);
-    }
-		return (NULL);
+	return (*s) ? (char *)s : NULL;
+
 }
 
 
@@ -32,9 +29,9 @@ char *_strpbrk(char *s, char *accept)
  *
  *Return: len
  */
-unsigned int _strcspn(char *s, char *accept)
+int _strcspn(char *s, char *accept)
 {
-	unsigned int len = 0, i, j;
+	int len = 0, i, j;
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
