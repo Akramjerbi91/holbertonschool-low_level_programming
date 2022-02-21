@@ -1,12 +1,5 @@
 #include "main.h"
-
-/**
- *_strcspn - n of char at beginning 1st str that do not occur in the second str
- *@s: char
- *@accept: char
- *
- *Return: len
- */
+#include <stddef.h>
 
 unsigned int _strcspn(char *s, char *accept);
 
@@ -27,10 +20,17 @@ char *_strpbrk(char *s, char *accept)
 	if ((char *)s)
 		return (s);
 	else
-		return (0);
+		return (NULL);
 }
 
 
+/**
+ *_strcspn - n of char at beginning 1st str that do not occur in the second str
+ *@s: char
+ *@accept: char
+ *
+ *Return: len
+ */
 unsigned int _strcspn(char *s, char *accept)
 {
 	unsigned int len = 0, i, j;
