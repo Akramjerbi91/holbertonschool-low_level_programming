@@ -5,10 +5,10 @@
  *@s: char
  *@to: char
  *
- * Return: void
+  Return: void
  */
 
 void set_string(char **s, char *to)
 {
-   *s = to;
+	*s = to;
 }
