@@ -1,6 +1,5 @@
 #include "main.h"
-#include <stdio.h>
-int primes(int n, int p);
+int primes(int n, int p, int z);
 
 /**
  * is_prime_number - checks primality
@@ -12,37 +11,41 @@ int primes(int n, int p);
 int is_prime_number(int n)
 {
 	int p = 2;
+	int z = 2;
 
-	printf("begin is prime number n = %d\n", n);
+	if (n > 11)
+	{
+	z = 11;
+	if (n % 2 == 0 || n % 3 == 0 || n % 5 == 0 || n % 7 == 0 || n % 11 == 0)
+		return (0);
+	}
+
 	if (n < 2)
 	{
-	printf(" %d < 2\n", n);
 	return (0);
 	}
 	if (n == 2)
 	{
-	printf("%d = 2\n", n);
 	return (1);
 	}
-	return (primes(n, p));
+	return (primes(n, p, z));
 }
 /**
  * primes - walk throw all numbers checks if prime
  * @n: input
  * @p: index
- *
+ * @z: optimzation
  * Return: 1 if prime else 0
  */
 
-int primes(int n, int p)
+int primes(int n, int p, int z)
 {
-	printf("begin primes n = %d p = %d\n", n, p);
-	if (p > n / 2)
+	if (p > n / z)
 	return (1);
 
 
 	if (n % p == 0)
 	return (0);
 
-	return (primes(n, p + 1));
+	return (primes(n, p + 1, z));
 }
