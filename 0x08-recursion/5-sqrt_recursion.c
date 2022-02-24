@@ -11,13 +11,12 @@ int sqrt_guess(int n, int p);
 
 int _sqrt_recursion(int n)
 {
-	int p = n / 2;
 
 	if (n == 1)
 
 		return (1);
 
-	return (sqrt_guess(n, p));
+	return (sqrt_guess(n, 1));
 }
 
 /**
@@ -30,22 +29,22 @@ int _sqrt_recursion(int n)
 
 int sqrt_guess(int n, int p)
 {
-	int q = p * p;
+	int q;
+
+	q = p * p;
 
 	if (q == n)
 	{
 		return (p);
 	}
-	if (q > n)
-	{
-		p--;
-		return (sqrt_guess(n, p));
-	}
 
-	else
+	if (n < p)
 	{
 		return (-1);
 	}
+	else
+	{
+		p++;
+		return (sqrt_guess(n, p));
+	}
 }
-
-
