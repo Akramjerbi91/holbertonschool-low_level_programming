@@ -15,15 +15,14 @@
 int main(int argc, char *argv[])
 {
 	int penny, twoPenny, nickel, dime, quarter;
-	int z, y, x, w;
-	int count;
+	int count, temp;
 
-	count = z = y = x = w = 0;
-	penny = 1;
-	twoPenny = 2;
-	nickel = 5;
-	dime = 10;
+	count = temp = 0;
 	quarter = 25;
+	dime = 10;
+	nickel = 5;
+	twoPenny = 2;
+	penny = 1;
 
 	if (argc == 2)
 	{
@@ -32,22 +31,25 @@ int main(int argc, char *argv[])
 			/*Divide input by biggest coin*/
 			count += atoi(argv[1]) / quarter;
 			/*Store the remainder in variable z*/
-			z = atoi(argv[1]) % quarter;
-			/*Divide remainder by second beggest coin and repeat*/
-			count += z / dime;
-			y = z % dime;
-			count += y / nickel;
-			x = y % nickel;
-			count += x / twoPenny;
-			w = x % twoPenny;
-			count += w / penny;
+			temp = atoi(argv[1]) % quarter;
+			/*Divide remainder by second beggest coin and repeat
+			 *till last coin*/
+			count += temp / dime;
+			temp = temp % dime;
+			count += temp / nickel;
+			temp = temp % nickel;
+			count += temp / twoPenny;
+			temp = temp % twoPenny;
+			count += temp / penny;
 			printf("%d\n", count);
 		}
 		else
+			/*argument is negative*/
 			printf("0\n");
 	}
 	else
 	{
+		/*not exactly one argument*/
 		printf("Error\n");
 		return (1);
 	}
