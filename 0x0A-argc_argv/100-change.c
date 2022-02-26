@@ -44,7 +44,7 @@ int main(int argc, char *argv[])
 			printf("%d\n", count);
 		}
 		else
-			printf("0n");
+			printf("0\n");
 	}
 	else
 	{
