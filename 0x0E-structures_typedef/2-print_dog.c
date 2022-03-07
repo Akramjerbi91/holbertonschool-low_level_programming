@@ -23,18 +23,18 @@ void print_dog(struct dog *d)
 			printf("Name: (nill)\nAge: (nill)\nOwner: %s\n", d->owner);
 
 		else if (d->name == 0 && d->owner == 0)
-			printf("Name: (nill)\nAge: %1.f\nOwner: (nill)\n", d->age);
+			printf("Name: (nill)\nAge: %1.6f\nOwner: (nill)\n", d->age);
 
 
 		else if (d->age == 0)
 			printf("Name: %s\nAge: (nill)\nOwner: %s\n", d->name, d->owner);
 
 		else if (d->owner == 0)
-			printf("Name: %s\nAge: %1.f\nOwner: (nill)\n", d->name, d->age);
+			printf("Name: %s\nAge: %1.6f\nOwner: (nill)\n", d->name, d->age);
 		else if (d->name == 0)
-			printf("Name: (nill)\nAge: %.1f\nOwner: %s\n", d->age, d->owner);
+			printf("Name: (nill)\nAge: %1.6f\nOwner: %s\n", d->age, d->owner);
 		else
-			printf("Name: %s\nAge: %.1f\nOwner: %s\n", d->name, d->age, d->owner);
+			printf("Name: %s\nAge: %1.6f\nOwner: %s\n", d->name, d->age, d->owner);
 	}
 
 }
