@@ -1,6 +1,14 @@
 #include <stdarg.h>
 #include <stdio.h>
 
+/**
+ * print_numbers - prints nums with separator
+ * @separator: const char
+ * @n: unsigned int
+ * @...: ints
+ *
+ * Return: void
+ */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	va_list ap;
