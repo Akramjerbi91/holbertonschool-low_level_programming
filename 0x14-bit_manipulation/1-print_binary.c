@@ -10,7 +10,7 @@ void invert(unsigned long int n)
 	if (n == 0)
 		return;
 
-invert(n >> 1);
+	invert(n >> 1);
 
 	if ((n & 1) == 1)
 		_putchar('1');
@@ -30,5 +30,5 @@ void print_binary(unsigned long int n)
 		_putchar('0');
 		return;
 	}
-invert(n);
+	invert(n);
 }
