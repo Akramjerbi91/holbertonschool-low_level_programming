@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 /**
  * invert -  1's and 0's
