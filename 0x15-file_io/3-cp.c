@@ -6,7 +6,7 @@
  *
  * Return: new file
  */
-void cp(char *file_from, char *file_to)
+int  cp(char *file_from, char *file_to)
 {
 	int ff, ft, sz;
 	char buf[1024];
@@ -41,6 +41,7 @@ void cp(char *file_from, char *file_to)
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", ft);
 		exit(100);
 	}
+	return (0);
 }
 /**
  * main - main func
