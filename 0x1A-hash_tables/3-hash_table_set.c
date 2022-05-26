@@ -1,7 +1,6 @@
 #include "hash_tables.h"
 #include <stdlib.h>
 #include <string.h>
-#include <stdio.h>
 
 /**
  * hash_node_create - create a key value node
@@ -13,7 +12,10 @@ hash_node_t *hash_node_create(const char *key, const char *value)
 {
 	hash_node_t *entry = malloc(sizeof(hash_node_t) * 1);
 
-	entry->key = malloc(strlen(key) + 1);
+	if (key == NULL)
+		entry->key = "";
+	else
+		entry->key = malloc(strlen(key) + 1);
 
 	if (value == NULL)
 		entry->value = "";
@@ -40,10 +42,9 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	hash_node_t *prev;
 	hash_node_t *entry;
 
-/*	if (strlen(key) == 0)
+	if (strlen(key) == 0)
 		return (0);
-		*/
-	printf("ht size is %lu", ht->size);
+
 	index = key_index((unsigned char *)key, ht->size);
 
 	entry = ht->array[index];
