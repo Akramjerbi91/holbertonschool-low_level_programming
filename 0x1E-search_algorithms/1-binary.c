@@ -12,10 +12,11 @@ int binary_search(int *array, size_t size, int value)
 {
 	int low = 0;
 	int high = size;
+	int mid = low + (high - low) / 2;
 
 	while (low <= high)
 	{
-		int mid = low + (high - low) / 2;
+		mid = low + (high - low) / 2;
 
 		print_array(array, mid);
 
